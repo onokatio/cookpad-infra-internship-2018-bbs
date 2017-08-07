@@ -50,6 +50,7 @@ group :development do
   gem 'capistrano', '3.6.1'
   gem 'capistrano-rails'
   gem 'capistrano-withrsync'
+  gem 'itamae'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
