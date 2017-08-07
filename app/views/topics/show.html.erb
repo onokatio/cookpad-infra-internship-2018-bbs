@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @topic.title %></h1>
+<%- @topic.comments.each do |c| -%>
+<div style="border: solid 1px #AAA; margin-bottom: 10px; padding: 10px;">
+<div><%= c.body.gsub("\n", "<br>").html_safe %></div>
+<div style="color: #AAA">by <%= c.user ? c.user.email : 'anonymous' %></div>
+</div>
+<%- end -%>
+
+<%= link_to('New comment', new_topic_comment_path(topic_id: @topic.id)) %>
