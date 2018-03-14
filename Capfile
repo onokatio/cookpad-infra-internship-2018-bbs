@@ -6,7 +6,6 @@ require "capistrano/deploy"
 
 require "capistrano/rails"
 require "capistrano/bundler"
-require "capistrano/withrsync"
 
 # Include tasks from other gems included in your Gemfile
 #
