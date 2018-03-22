@@ -2,6 +2,7 @@
 # https://github.com/defunkt/unicorn/blob/master/examples/unicorn.conf.rb
 worker_processes 8
 listen 8080, :tcp_nopush => true
+listen '/tmp/unicorn.sock'
 pid "tmp/unicorn.pid"
 preload_app true
 
