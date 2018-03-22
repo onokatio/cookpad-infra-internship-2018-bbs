@@ -6,7 +6,7 @@ class TopicsController < ApplicationController
   def index
     @page = params[:page]&.to_i || 1
     per_page = 10
-    @topics = Topic.order('updated_at DESC').limit(per_page).offset(per_page * (@page - 1))
+    @topics = Topic.order('topics.updated_at DESC').limit(10).offset(10*(@page-1)).preload(:comments)
     @max_page= (Topic.count / 10.0).ceil
   end
 
