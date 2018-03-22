@@ -22,6 +22,7 @@ test:
 
 production:
   adapter: mysql2
+  host: onokatio-001.cc7xfhp2kekk.ap-northeast-1.rds.amazonaws.com
   database: bbs
   username: bbs
   password: ji2yodankai
