@@ -2,7 +2,7 @@
 lock '3.6.1'
 
 set :application, 'bbs'
-set :repo_url, 'https://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/kanny-bbs-test'
+set :repo_url, 'https://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/onokatio'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
