@@ -4,10 +4,12 @@
 
 <% @topics.each do |topic| %>
   <div style="border: solid 1px #AAA; margin-bottom: 10px; padding: 10px;">
+		<% cache topic do %>
     <%= link_to topic.title, topic, style: 'font-size: 150%;' %>
 		<% topic.comments.sort_by {|c| c.created_at }.last(3).each do |comment| %>
       <div><%= comment.body.truncate(20) %></div>
     <% end %>
+		<% end %>
   </div>
 <% end %>
 
